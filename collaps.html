@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="card card-body mt-5" style="height: 30rem;width: 60rem;">
+        
+            <div class="row">
+                <div id="collapseExample" class="col show">
+                    <div  class="collapse collapse-horizontal" style="display: inline-block;width: 100%;">
+                        <div  class="card card-body" 
+                        style="height: 15rem;"></div>
+                    </div>
+
+                    
+                </div>
+                <div class="col">
+                    <div id="colExample" class="card card-body" style="height: 15rem;">
+                        <a href="#" id="collapes-btn" class="btn btn-primary" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseExample">Toggle</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+             
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" 
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script>
+        
+        $(`document`).load(()=>{
+
+            $(`#collapes-btn`).click(()=>{
+              $(`#colExample`).addClass(`col-lg-12`);
+        })
+        });
+
+        
+    </script>
+</body>
+</html>
